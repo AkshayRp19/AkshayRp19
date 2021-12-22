@@ -268,10 +268,10 @@ public class Assignment {
         public static void main exerciseNine(WebDriver driver)
         {
         Actions ac=new Actions(driver);
-        WebElement e1=driver.findElement(By.id("mousehover"));
+        WebElement e=driver.findElement(By.id("mousehover"));
         ac.moveToElement(e).build().perform();
         ac.click().build().perform();
-        WebElement e=driver.findElement(By.linkText("Top"));
+        WebElement e1=driver.findElement(By.linkText("Top"));
         ac.moveToElement(e1);
         ac.click().build().perform();
 	}
